@@ -13,7 +13,7 @@ align-items: center;
 
 export const Clock = styled.span`
 flex: 1;
-text-align: left;
+text-align: right;
 color: white;
 font-size: ${({ theme }) => theme.size * 0.025 + 'vh' || '2.3vh'};
 margin: 4px;

@@ -26,7 +26,7 @@ const Header: React.FC<Props> = (props) => {
         <StatusBarIcon src={batteryIcon}/>
       </StatusBar>
       <Nav>
-        <Icon width='8%' src={arrowIcon}/>
+        <Icon width='8%' flipHorizontally={true} src={arrowIcon}/>
         <Icon width='13%' src={profileIcon}/>
         <PhoneNumber {...props}/>
         <Icon src={videoIcon}/>

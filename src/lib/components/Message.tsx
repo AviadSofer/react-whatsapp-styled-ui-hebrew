@@ -17,7 +17,7 @@ const Message: React.FC<Props> = (props) => {
     };
   })
   return (
-    <StyledMessage messageFontColor={color}>{message || 'Type a message'}</StyledMessage>
+    <StyledMessage messageFontColor={color}>{message || 'הודעה'}</StyledMessage>
   )
 }
 

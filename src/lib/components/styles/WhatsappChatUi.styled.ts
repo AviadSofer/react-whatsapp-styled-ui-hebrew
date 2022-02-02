@@ -38,7 +38,7 @@ border-radius: 36px;
 `
 
 export const StyledWhatsapp = styled.div`
-direction: ltr;
+direction: rtl;
 height: ${({ theme }) => theme.size + 'vh' || '50vh'};
 width: ${({ theme }) => theme.size * 0.6 + 'vh' || '30vh'};
 background-image: url(${bg});

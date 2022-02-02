@@ -22,4 +22,5 @@ width: 5%;
 background-color: ${({ theme }) => theme.bg};
 border-radius: 50%;
 padding: 10px;
+transform: scaleX(-1);
 `
