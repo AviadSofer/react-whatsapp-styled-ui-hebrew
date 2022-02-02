@@ -1,12 +1,17 @@
 {
-  "name": "react-whatsapp-styled-ui",
+  "name": "react-whatsapp-styled-ui-hebrew",
   "description": "A Whatsapp chat screenshot design, build with React, TS, CSS and styled-components.",
   "version": "1.0.0",
   "private": false,
   "main": "dist/index.ts",
   "module": "dist/index.ts",
-  "files": [ "dist", "README.md" ],
-  "repository": {"url": "https://github.com/AviadSofer/react-whatsapp-styled-ui"},
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "url": "https://github.com/AviadSofer/react-whatsapp-styled-ui"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
