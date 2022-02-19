@@ -1,10 +1,10 @@
 {
   "name": "react-whatsapp-styled-ui-hebrew",
   "description": "A Whatsapp chat screenshot design, build with React, TS, CSS and styled-components.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": false,
-  "main": "dist/index.ts",
-  "module": "dist/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
@@ -16,8 +16,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "publish:local": "babel src/lib/ --out-dir dist --copy-files",
-    "publish:npm": "babel src/lib/ --out-dir dist --copy-files && npm publish"
+    "delete-dist": "rd /s \"dist\"",
+    "publish:local": "tsc",
+    "publish:npm": "tsc && npm publish"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -29,10 +30,12 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@types/styled-components": "^5.1.21",
     "@vitejs/plugin-react": "^1.0.7",
+    "copyfiles": "^2.4.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
   }

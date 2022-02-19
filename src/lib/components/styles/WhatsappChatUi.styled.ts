@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bg from '../../assets/img/bg.png'
 
 export const SmartphoneDesign = styled.div`
 width: ${({ theme }) => theme.size * 0.6 + 'vh' || '30vh'};
@@ -41,7 +40,7 @@ export const StyledWhatsapp = styled.div`
 direction: rtl;
 height: ${({ theme }) => theme.size + 'vh' || '50vh'};
 width: ${({ theme }) => theme.size * 0.6 + 'vh' || '30vh'};
-background-image: url(${bg});
+background-image: url('https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302935/bg_rxsblf.png');
 display: flex;
 flex-direction: column;
 justify-content: space-between;

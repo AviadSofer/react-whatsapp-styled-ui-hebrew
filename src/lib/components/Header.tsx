@@ -1,14 +1,6 @@
 import React from 'react';
 import { Clock, StatusBarIcon, Nav, StatusBar, StyledHeader } from './styles/Header.styled';
 import { Icon } from './styles/Icon.styled';
-import signelIcon from '../assets/img/signal.png';
-import wifiIcon from '../assets/img/wifi.png';
-import batteryIcon from '../assets/img/battery.png';
-import arrowIcon from '../assets/img/arrow.png';
-import videoIcon from '../assets/img/video.png';
-import profileIcon from '../assets/img/profile.png';
-import phoneIcon from '../assets/img/phone.png';
-import moreIcon from '../assets/img/more.png';
 import PhoneNumber from './PhoneNumber';
 
 interface Props {
@@ -21,17 +13,17 @@ const Header: React.FC<Props> = (props) => {
     <StyledHeader>
       <StatusBar>
         <Clock>{date.getHours() + ':' + (date.getMinutes() < 10 ? '0' : '') + date.getMinutes()}</Clock>
-        <StatusBarIcon src={signelIcon}/>
-        <StatusBarIcon src={wifiIcon}/>
-        <StatusBarIcon src={batteryIcon}/>
+        <StatusBarIcon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302906/signal_yyclk0.png'}/>
+        <StatusBarIcon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302907/wifi_wwtrkn.png'}/>
+        <StatusBarIcon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302903/battery_iudfyf.png'}/>
       </StatusBar>
       <Nav>
-        <Icon width='8%' flipHorizontally={true} src={arrowIcon}/>
-        <Icon width='13%' src={profileIcon}/>
+        <Icon width='8%' flipHorizontally={true} src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302903/arrow_hbega1.png'}/>
+        <Icon width='13%' src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302908/profile_mo2pz9.png'}/>
         <PhoneNumber {...props}/>
-        <Icon src={videoIcon}/>
-        <Icon src={phoneIcon}/>
-        <Icon src={moreIcon}/>
+        <Icon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302906/video_d5lurg.png'}/>
+        <Icon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302909/phone_bqzgoj.png'}/>
+        <Icon src={'https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302905/more_dqid8s.png'}/>
       </Nav>
     </StyledHeader>
   )
