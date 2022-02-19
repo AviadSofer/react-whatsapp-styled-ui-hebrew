@@ -9,7 +9,7 @@ A Whatsapp chat screenshot design, build with React, TS, CSS.
 
 ```typescript
 import React from 'react';
-import WhatsappUi from './lib/components/WhatsappUi';
+import WhatsappUi from 'react-whatsapp-styled-ui-hebrew';
 
 function App() {
   return (
