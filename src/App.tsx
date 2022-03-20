@@ -5,7 +5,7 @@ import WhatsappUi from './lib/components/WhatsappUi'
 const App: React.FC = () => {
   return (
     <StyledApp>
-      <WhatsappUi message={''} size={70} phoneNumber={'9765555555555'}/>
+      <WhatsappUi message={''} size={60} phoneNumber={'9765555555555'}/>
     </StyledApp>
   )
 }
