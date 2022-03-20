@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
 export const SmartphoneDesign = styled.div`
-height: ${({ theme }) => theme.size + '%' || '50%'};
-width: ${({ theme }) => theme.size * 0.3 + '%' || '15%'};
+width: ${({ theme }) => theme.size * 0.6 + 'vh' || '30vh'};
 position: relative;
 margin: auto;
 border: 16px black solid;
 border-top-width: 60px;
 border-bottom-width: 60px;
 border-radius: 36px;
-@media (max-width: 768px) {
-  width: ${({ theme }) => theme.size * 0.9 + '%' || '15%'};
-}
 
 *:before {
   content: '';
@@ -42,8 +38,8 @@ border-radius: 36px;
 
 export const StyledWhatsapp = styled.div`
 direction: rtl;
-height: 100%;
-width: 100%;
+height: ${({ theme }) => theme.size + 'vh' || '50vh'};
+width: ${({ theme }) => theme.size * 0.6 + 'vh' || '30vh'};
 background-image: url('https://res.cloudinary.com/dmjmaixrd/image/upload/v1645302935/bg_rxsblf.png');
 display: flex;
 flex-direction: column;
